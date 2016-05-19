@@ -1,0 +1,17 @@
+outFileID = fopen('OutputMatrix.txt');
+inFileID = fopen('OutputMatrix.txt');
+A = fscanf(inFileID ,'%d',[512,inf]);
+B = fscanf(outFileID ,'%d',[512,inf]);
+A = A';
+B = B';
+ImageA = mat2gray(A);
+ImageB = mat2gray(B);
+figure;
+subplot(1,2,1);
+imshow(ImageA);
+title('Before');
+subplot(1,2,2);
+imshow(ImageB);
+title('After');
+fclose(outFileID );
+fclose(inFileID);

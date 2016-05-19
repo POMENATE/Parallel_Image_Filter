@@ -1,0 +1,9 @@
+- Image of size 512x512 graylevel
+- Copy graylevel values into InputMatrix.txt
+- Run: mpiexec -n [number of process] FilterImage
+- output willl be stored in OutputMatrix.txt
+
+To view the images: Run the disp.m using matlab
+
+Note:
+Any 3x3 filter can be added
